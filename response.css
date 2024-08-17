@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Blue gradient */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(90deg, #3a6073, #16222a); /* Darker gradient on scroll */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.menu li a:hover {
+    background: white;
+    color: #2a5298;
+    border-radius: 5px;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #fff;
+}
+
+#home {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Blue gradient */
+}
+
+#about {
+    background: linear-gradient(135deg, #ff512f, #dd2476); /* Red gradient */
+}
+
+#services {
+    background: linear-gradient(135deg, #1e3c72, #ff512f); /* Mixed gradient */
+}
+
+#contact {
+    background: linear-gradient(135deg, #1e3c72, #12c2e9); /* Blue-light gradient */
+}
